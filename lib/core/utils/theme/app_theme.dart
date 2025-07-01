@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static final ThemeData myTheme = ThemeData(
     appBarTheme: AppBarTheme(
-      iconTheme: IconThemeData(color: AppColors.whiteColor),
+      iconTheme: const IconThemeData(color: AppColors.whiteColor),
       elevation: 0,
       centerTitle: true,
       titleTextStyle: AppStyles.textStyleBold.copyWith(
@@ -14,7 +14,7 @@ class AppTheme {
 
       backgroundColor: AppColors.blueColor,
     ),
-    drawerTheme: DrawerThemeData(
+    drawerTheme: const DrawerThemeData(
       backgroundColor: AppColors.whiteColor,
     ),
   );

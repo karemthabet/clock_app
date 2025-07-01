@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(ClockApp());
+  runApp(const ClockApp());
 }
 
 class ClockApp extends StatelessWidget {
@@ -17,11 +17,12 @@ class ClockApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder:
-          (context, child) =>
-              MaterialApp(
-                theme: AppTheme.myTheme,
-                
-                debugShowCheckedModeBanner: false, home: ClockPage()),
+          (context, child) => MaterialApp(
+            theme: AppTheme.myTheme,
+
+            debugShowCheckedModeBanner: false,
+            home: const ClockPage(),
+          ),
     );
   }
 }
