@@ -3,10 +3,12 @@ import 'package:clock_app/core/utils/styles/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class BuildRow extends StatelessWidget {
-  const BuildRow({super.key, required this.iconData, required this.title});
+class RowWidget extends StatelessWidget {
   final IconData iconData;
   final String title;
+
+  const RowWidget({super.key, required this.iconData, required this.title});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,12 +16,12 @@ class BuildRow extends StatelessWidget {
       child: Row(
         children: [
           Icon(iconData, color: AppColors.greyColor),
-          SizedBox(width: 20.w),
+           SizedBox(width: 20.w),
           Text(
             title,
-            style: AppStyles.textStyle14.copyWith(
+            style: AppStyles.textStyleBold.copyWith(
               color: AppColors.blackColor,
-              fontSize: 20,
+              fontSize: 25.sp,
             ),
           ),
         ],

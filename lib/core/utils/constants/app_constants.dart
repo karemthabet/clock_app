@@ -10,5 +10,7 @@ class AppConstants {
     AppColors.purpleColor,
     AppColors.blueColor,
     AppColors.yellowColor,
+  
+
   ];
 }
